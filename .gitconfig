@@ -1,0 +1,25 @@
+[core]
+	excludesfile = /opt/boxen/config/git/gitignore
+	editor = /usr/bin/vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = liyicky
+	email = liyicky@gmail.com
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
+
+[alias]
+	tree = log --graph --oneline --all --decorate --color
+	wood = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=iso
+	sqsh = mergetool --tool opendiff
+
+[hub]
+protocol = https
+[color]
+	ui = true
