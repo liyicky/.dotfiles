@@ -1,10 +1,11 @@
+# Path
+PATH='/usr/local/bin:$PATH'
+
 # Source 
-source /opt/boxen/env.sh
 source /Users/liyicky/Catode/Scripts/Prompt/liy-prompt.sh
 
 # Init rbenv
 eval "$(rbenv init -)"
-source /opt/boxen/rbenv/completions/rbenv.bash
 
 # Aliases
 alias build="source /Users/liyicky/Catode/Scripts/TestflightAutomation/demo/spike.sh"
